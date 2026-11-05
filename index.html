@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ZOMBIE HEROES</title>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+<canvas id="c" width="1920" height="1200"></canvas>
+<div id="menu" class="ov on"><h1>ZOMBIE HEROES</h1><p>Temanmu terluka dan tidak bisa lari. Hanya kamu yang berdiri di antara dia dan gerombolan zombie.</p><button id="bStart" class="btn big">MULAI</button></div>
+<div id="dif" class="ov"><h2>Pilih kesulitan</h2><div class="row">
+<button data-d="easy">EASY<small>Zombie lamban dan sedikit. Cocok untuk pemula.</small></button>
+<button data-d="medium">MEDIUM<small>Lebih tebal dan lebih agresif.</small></button>
+<button data-d="hard">HARD<small>Ramai, lincah, dan sangat kuat.</small></button></div>
+<button id="bBack" class="btn ghost">Kembali</button></div>
+<div id="tut" class="ov"><h2>Cara bermain</h2><div class="keys"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> bergerak</span><span>Mouse: bidik</span><span>Klik tahan / <kbd>Spasi</kbd>: tembak</span><span><kbd>P</kbd> jeda</span></div>
+<p>Zombie mengincar temanmu. Tembak sebelum mereka sampai. Ambil orb kuning yang dijatuhkan untuk naik level, lalu pilih satu bonus. Segitiga merah di tepi layar menandai tempat zombie akan masuk.</p><button id="bGo" class="btn">Mulai bertahan</button></div>
+<div id="lvl" class="ov"><h2>Level naik!</h2><p id="lvlSub"></p><div class="row" id="cards"></div></div>
+<div id="pause" class="ov"><h2>Dijeda</h2><div class="row"><button id="bRes">Lanjut</button><button id="bRe2">Ulangi</button><button id="bMn2">Menu</button></div></div>
+<div id="end" class="ov"><h2 id="endT"></h2><p id="endS"></p><div class="row"><button id="bRetry">Coba lagi</button><button id="bMenu">Menu utama</button></div></div>
+<div class="tools"><button id="bSnd">Suara: nyala</button><button id="bPau">Jeda</button></div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
